@@ -9,12 +9,12 @@
 
 #include <functional>
 #include <type_traits>
-#include <boost/system/system_error.hpp>
+#include <system_error>
 
 namespace act
 {
-    using error_code = boost::system::error_code;
-    using system_error = boost::system::system_error;
+    using error_code = std::error_code;
+    using system_error = std::system_error;
 }
 
 namespace act { namespace detail

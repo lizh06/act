@@ -8,11 +8,11 @@
 #define ACT_DETAIL_BUFFER_HPP_INCLUDED
 
 #include <type_traits>
-#include <boost/asio/buffer.hpp>
+#include <asio/buffer.hpp>
 
 namespace act { namespace detail
 {
-    using ::boost::asio::is_dynamic_buffer;
+    using ::asio::is_dynamic_buffer;
 
     // The DynamicBuffer overloads for read/write is flawed. They accept a
     // forwarding reference but always make their own copy. We have to workaround

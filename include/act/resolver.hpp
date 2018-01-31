@@ -8,11 +8,11 @@
 #define ACT_RESOLVER_HPP_INCLUDED
 
 #include <act/awaiter.hpp>
-#include <boost/asio/detail/string_view.hpp>
+#include <asio/detail/string_view.hpp>
 
 namespace act
 {
-    using ::boost::asio::string_view;
+    using ::asio::string_view;
 
     template<class Resolver>
     inline auto resolve(Resolver& resolver, string_view host, string_view service)
